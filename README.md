@@ -1,6 +1,9 @@
 # raspi-quizbuzzer
 Quiz buzzer system that connects buttons and lights via GPIO on Raspberry Pi
+
 Raspberry Piを使用したクイズの早押し判定システム
+
+
 Seriaで購入したプッシュライトを改造し、Raspberry PiとGPIO接続して、早押し判定をしています。
 現在は1着のボタンの点灯、音声（ブザーも可)に対応しています。リセット機能も対応しています。
 
