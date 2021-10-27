@@ -46,7 +46,7 @@ GPIO.output(buzzer,False)
 # When you want to exit, press Ctrl & C
 try:
 	while True:
-		# The LED and buzzer will sound after the button is pressed.
+		# The LED and buzzer will work after the button is pressed.
 		# The buzzer will stop sounding after 0.5 seconds, and the LEd will turn off after 5 seconds.
 		if GPIO.input(btn1):
 			GPIO.output(led1, True)
