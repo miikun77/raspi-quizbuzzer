@@ -2,8 +2,10 @@ import RPi.GPIO as GPIO
 from time import sleep
 from pygame import mixer
 
-# set variable
-# These are pysical GPIO number on the board
+# Set variables
+# These are BCM GPIO number on the board (NOT Physical number)
+# Please visit https://www.pinout.xyz
+
 btn1 = 4
 btn2 = 27
 btn3 = 10
@@ -31,6 +33,7 @@ buz_sound = mixer.Sound("buzzer.wav")
 
 
 # Check Ready
+# Check if the LEDs and buzzer work
 GPIO.output(led1,True)
 GPIO.output(led2,True)
 GPIO.output(led3,True)
@@ -41,9 +44,11 @@ GPIO.output(led2,False)
 GPIO.output(led3,False)
 GPIO.output(led4,False)
 
-
+# When you want to exit, press Ctrl & C
 try:
 	while True:
+		# The LED will turn on after the button is pressed.
+		# The sound will be played to the external output, and the LEd will turn off after 5 seconds.
 		if GPIO.input(btn1):
 			GPIO.output(led1, True)
 			buz_sound.play()
