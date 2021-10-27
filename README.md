@@ -1,8 +1,7 @@
 # raspi-quizbuzzer
-Quiz buzzer system that connects buttons and lights via GPIO on Raspberry Pi
+### Quiz buzzer system that connects buttons and lights via GPIO on Raspberry Pi
+### Raspberry Piを使用したクイズの早押し判定システム
 <br>
-Raspberry Piを使用したクイズの早押し判定システム
-<br><br>
 高校のクイズ愛好会で使用するために作成しました。
 <br>
 Daisoで購入したプッシュライトを改造し、Raspberry Pi（以下Raspi）とGPIO接続して、早押し判定をしています。
@@ -43,7 +42,8 @@ LEDと圧電ブザーは外部抵抗を使ってください。
 
 https://youtu.be/PUfAXo7mgTU
 
-<br><br>
+<br>
+
 ## Reference
 https://monomonotech.jp/kurage/raspberrypi/daiso_mini_touch_light.html  
 参考にさせていただきました。ありがとうございます。
