@@ -15,7 +15,7 @@ led2 = 22
 led3 = 9
 led4 = 6
 
-buzzer =  12
+buzzer =  16
 
 # GPIO settings
 GPIO.setmode(GPIO.BCM)
@@ -78,7 +78,7 @@ try:
 			sleep(0.5)
 			GPIO.output(buzzer, False)
 			sleep(4.5)
-			GPIO.putput(led4,False)
+			GPIO.output(led4,False)
 
 except KeyboardInterrupt:
 	GPIO.cleanup()
