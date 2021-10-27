@@ -1,6 +1,6 @@
 # raspi-quizbuzzer
-## Quiz buzzer system that connects buttons and lights via GPIO on Raspberry Pi
-## Raspberry Piを使用したクイズの早押し判定システム
+### Quiz buzzer system that connects buttons and lights via GPIO on Raspberry Pi
+### Raspberry Piを使用したクイズの早押し判定システム
 <br>
 高校のクイズ愛好会で使用するために作成しました。
 <br>
@@ -13,7 +13,7 @@ Daisoで購入したプッシュライトを改造し、Raspberry Pi（以下Ras
 ソースコードは見づらく稚拙なものですが、ご意見等ありましたらぜひコメントしてください。
 <br>
 ## 配線図
-<img src='https://user-images.githubusercontent.com/64695370/139097194-b6ae511f-5cca-427c-8792-9ea4e0dd86b2.png' width=50%>
+![配線図](https://user-images.githubusercontent.com/64695370/139097194-b6ae511f-5cca-427c-8792-9ea4e0dd86b2.png)
 <br>
 
 RaspiのGPIOは**BCM**番号です。物理ピン番号ではありません。
@@ -36,7 +36,13 @@ Pin番号は変数にしているので、任意に変更できます。ソー�
 <br>
 スイッチはRaspiのプルアップ抵抗を使っているので問題ありませんが、
 LEDと圧電ブザーは外部抵抗を使ってください。
-<br><br>
+<br>
+
+## 実演映像
+
+https://youtu.be/PUfAXo7mgTU
+
+<br>
 
 ## Reference
 https://monomonotech.jp/kurage/raspberrypi/daiso_mini_touch_light.html  
