@@ -1,8 +1,10 @@
 import RPi.GPIO as GPIO
 from time import sleep
 
-# set variable
-# These are pysical GPIO number on the board
+# Set variables
+# These are BCM GPIO number on the board (NOT Physical number)
+# Please visit https://www.pinout.xyz
+
 btn1 = 4
 btn2 = 27
 btn3 = 10
@@ -28,58 +30,55 @@ GPIO.setup(led4, GPIO.OUT)
 GPIO.setup(buzzer, GPIO.OUT)
 
 # Check Ready
+# Check if the LEDs and buzzer work
 GPIO.output(led1,True)
 GPIO.output(led2,True)
 GPIO.output(led3,True)
 GPIO.output(led4,True)
+GPIO.output(buzzer,True)
 sleep(2)
 GPIO.output(led1,False)
 GPIO.output(led2,False)
 GPIO.output(led3,False)
 GPIO.output(led4,False)
+GPIO.output(buzzer,False)
 
-
+# When you want to exit, press Ctrl & C
 try:
 	while True:
-	
-		GPIO.output(led1, False)
-		GPIO.output(led2, False)
-		GPIO.output(led3, False)
-		GPIO.output(led4, False)
-
-	
-		while True:
-			if GPIO.input(btn1):
-				GPIO.output(led1, True)
-				GPIO.output(buzzer, True)
-				sleep(0.5)
-				GPIO.output(buzzer, False)
-				sleep(5)
-				break
+		# The LED and buzzer will work after the button is pressed.
+		# The buzzer will stop sounding after 0.5 seconds, and the LEd will turn off after 5 seconds.
+		if GPIO.input(btn1):
+			GPIO.output(led1, True)
+			GPIO.output(buzzer, True)
+			sleep(0.5)
+			GPIO.output(buzzer, False)
+			sleep(4.5)
+			GPIO.output(led1,False)
+					
+		if GPIO.input(btn2):
+			GPIO.output(led2, True)
+			GPIO.output(buzzer, True)
+			sleep(0.5)
+			GPIO.output(buzzer, False)
+			sleep(4.5)
+			GPIO.output(led2,False)
+					
+		if GPIO.input(btn3):
+			GPIO.output(led3, True)
+			GPIO.output(buzzer, True)
+			sleep(0.5)
+			GPIO.output(buzzer, False)
+			sleep(4.5)
+			GPIO.output(led3,False)
 			
-			if GPIO.input(btn2):
-				GPIO.output(led2, True)
-				GPIO.output(buzzer, True)
-				sleep(0.5)
-				GPIO.output(buzzer, False)
-				sleep(5)
-				break
-			
-			if GPIO.input(btn3):
-				GPIO.output(led3, True)
-				GPIO.output(buzzer, True)
-				sleep(0.5)
-				GPIO.output(buzzer, False)
-				sleep(5)
-				break
-			
-			if GPIO.input(btn4):
-				GPIO.output(led4, True)
-				GPIO.output(buzzer, True)
-				sleep(0.5)
-				GPIO.output(buzzer, False)
-				sleep(5)
-				break
+		if GPIO.input(btn4):
+			GPIO.output(led4, True)
+			GPIO.output(buzzer, True)
+			sleep(0.5)
+			GPIO.output(buzzer, False)
+			sleep(4.5)
+			GPIO.putput(led4,False)
 
 except KeyboardInterrupt:
 	GPIO.cleanup()

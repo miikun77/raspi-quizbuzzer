@@ -13,5 +13,7 @@ Seriaで購入したプッシュライトを改造し、Raspberry Pi（以下Ras
 ソースコードは見づらく稚拙なものですが、ご意見等ありましたらぜひコメントしてください。
 
 音声出力の際に、
+
 GPIOに圧電ブザーをつなぐ場合はquizbuzzer.py
+
 Raspiの音声出力を用いる場合はquizaudio.pyとbuzzer.wavを使用してください。
