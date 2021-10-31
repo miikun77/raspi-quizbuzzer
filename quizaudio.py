@@ -76,4 +76,3 @@ try:
 except KeyboardInterrupt:
 	GPIO.cleanup()
 	print("Bye!")
-

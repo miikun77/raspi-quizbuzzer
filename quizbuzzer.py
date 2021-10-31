@@ -1,3 +1,6 @@
+# 自作早押しボタンのPythonソースコード
+# Raspberry Piで動作します。
+
 import RPi.GPIO as GPIO
 from time import sleep
 
@@ -83,4 +86,3 @@ try:
 except KeyboardInterrupt:
 	GPIO.cleanup()
 	print("Bye!")
-
