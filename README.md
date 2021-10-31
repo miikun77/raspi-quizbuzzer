@@ -43,7 +43,7 @@ LEDと圧電ブザーは外部抵抗を使ってください。
 
 ## 実演映像
 
-https://youtu.be/PUfAXo7mgTU (Ver3.1)
+https://youtu.be/PUfAXo7mgTU (Ver3.2)
 
 https://youtu.be/TQ3MmJUy48w (開発中の映像)
 
@@ -52,7 +52,7 @@ https://youtu.be/TQ3MmJUy48w (開発中の映像)
 ## 配線詳細画像
 ロット番号等によって異なる可能性があります。各自で確認してください。
 <br>
-<img src="https://user-images.githubusercontent.com/64695370/139585062-acd948d8-91d7-4f61-8868-475a2777949b.jpg" width=50%> <img src="https://user-images.githubusercontent.com/64695370/139585100-58ad5915-54ae-4342-b45b-90a983eb0b52.jpg" width=50%>
+<img src="https://user-images.githubusercontent.com/64695370/139585062-acd948d8-91d7-4f61-8868-475a2777949b.jpg" width=40%> <img src="https://user-images.githubusercontent.com/64695370/139585100-58ad5915-54ae-4342-b45b-90a983eb0b52.jpg" width=40%>
 
 <br>
 
